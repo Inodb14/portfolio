@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Inoussa Simporé</title>
+<meta name="description" content="Contact Inoussa Simporé, Business Analyst in Dubai.">
+<meta property="og:title" content="Contact · Inoussa Simporé">
+<meta property="og:description" content="Contact Inoussa Simporé, Business Analyst in Dubai.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f2a44">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2a44'/%3E%3Ctext x='8' y='44' font-family='Arial' font-weight='800' font-size='34' fill='%23fff'%3EI%3Ctspan fill='%235fd3c8'%3ES%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+<noscript><div class="noscript">This site works best with JavaScript turned on. You can still email me at inousasimpore226@gmail.com.</div></noscript>
+<header id="site-header"></header>
+<main id="main">
+<section class="page-hero" style="padding-bottom:72px">
+<div class="wrap contact-grid">
+<div class="stack-lg">
+<div class="stack">
+<div class="eyebrow">Contact</div>
+<h1>Let’s work <span class="accent">together</span></h1>
+<p class="lead">Open to Business Analyst and BI opportunities in Dubai. Send me a message and I’ll reply within 24 hours.</p>
+<span class="status-pill"><i></i>Available now · Dubai, UAE</span>
+</div>
+<div id="contact-rows"></div>
+</div>
+
+<div class="card form-card">
+<form class="form" id="contact-form" novalidate>
+<h2 style="font-size:22px">Send a message</h2>
+<div class="grid g2" style="gap:16px">
+<div class="field"><label for="f-name">Full name *</label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="100"><span class="err" id="e-name"></span></div>
+<div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="150"><span class="err" id="e-email"></span></div>
+</div>
+<div class="grid g2" style="gap:16px">
+<div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization" maxlength="120"></div>
+<div class="field"><label for="f-subject">Subject</label>
+<select id="f-subject" name="subject"><option>Job opportunity</option><option>Internship opportunity</option><option>Power BI / Excel project</option><option>Business analysis project</option><option>Other</option></select></div>
+</div>
+<div class="field"><label for="f-message">Message *</label><textarea id="f-message" name="message" required maxlength="2000" placeholder="Tell me about the role or the project"></textarea>
+<div style="display:flex;justify-content:space-between;gap:10px"><span class="err" id="e-message"></span><span class="counter-txt" id="msg-count">0 / 2000</span></div></div>
+<div class="hp" aria-hidden="true"><label for="f-website">Leave this empty</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<div class="form-msg" id="form-msg" role="alert"></div>
+<button class="btn btn-primary" type="submit" id="f-submit"><span class="spinner" aria-hidden="true"></span><span class="label">Send message</span></button>
+<small style="color:var(--muted)">Your details are only used to answer your message.</small>
+</form>
+<div class="success" id="form-success" tabindex="-1">
+<div class="ok"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></div>
+<h2 style="font-size:22px">Message sent</h2>
+<p class="body">Thank you<span id="success-name"></span>. I’ll get back to you within 24 hours.</p>
+<button type="button" class="btn btn-outline btn-sm" id="send-another">Send another message</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
+</body>
+</html>
