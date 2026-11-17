@@ -107,3 +107,15 @@ The page for each project is created automatically at `project.html?id=<id>`.
 - Projects: filter by category, live search, shareable filter links (`projects.html#bi`)
 - Case studies built from data, with previous / next navigation and click-to-zoom screenshots
 - Contact form: validation, spam protection, draft kept while typing, loading and success states
+
+---
+
+## 5. English / French button
+
+The **EN | FR** button in the header switches the whole site between English and French.
+The visitor's choice is remembered on their browser.
+
+- The French text lives in `assets/js/i18n-fr.js`: each line is `"English text": "French text"`.
+- To change a French translation, edit the French side only.
+- When you add or change English text (in an HTML page or in `data.js`), add the same English text
+  with its French version to `i18n-fr.js`. Text that has no French entry stays in English.

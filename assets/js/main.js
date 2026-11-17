@@ -66,6 +66,7 @@
       '</ul></nav>' +
       '<div class="nav-actions">' +
       (C.cvUrl ? '<a class="btn btn-primary btn-sm btn-cv" href="' + esc(C.cvUrl) + '" download>' + icon('download', 16, 2) + 'Download CV</a>' : '') +
+      '<button class="icon-btn lang-btn" id="lang-btn" type="button" data-no-i18n aria-label="Passer en français"><span class="on">EN</span><span>FR</span></button>' +
       '<button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode"></button>' +
       '<button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">' + icon('menu', 22) + '</button>' +
       '</div></div>';
@@ -217,7 +218,7 @@
       var words = ['Business Analyst', 'Business Intelligence', 'Power BI · Excel · SQL', 'Requirements · BRD · FRD'];
       var wi = 0, ci = 0, del = false;
       (function tick() {
-        var w = words[wi];
+        var w = window.tr ? window.tr(words[wi]) : words[wi];
         typed.textContent = w.slice(0, ci);
         if (!del && ci < w.length) { ci++; setTimeout(tick, 70); }
         else if (!del) { del = true; setTimeout(tick, 1600); }
@@ -248,7 +249,10 @@
       var list = all.filter(function (p) {
         if (state.cat !== 'all' && p.category !== state.cat) return false;
         if (!t) return true;
-        return (p.card.title + ' ' + p.card.desc + ' ' + p.card.tools.join(' ') + ' ' + p.context).toLowerCase().indexOf(t) > -1;
+        var tx = window.tr || function (x) { return x; };
+        var hay = p.card.title + ' ' + p.card.desc + ' ' + p.card.tools.join(' ') + ' ' + p.context;
+        hay += ' ' + tx(p.card.title) + ' ' + tx(p.card.desc) + ' ' + tx(p.context);
+        return hay.toLowerCase().indexOf(t) > -1;
       });
       grid.innerHTML = list.length ? list.map(cardHTML).join('') : '<p class="empty">No project matches your search.</p>';
       observe(grid);
