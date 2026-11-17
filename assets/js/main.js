@@ -209,6 +209,8 @@
       return '<div class="card feature reveal d' + (i + 1) + '"><div class="ico">' + icon(g.icon, 26) + '</div><h3 style="font-size:19px">' + esc(g.name) + '</h3>' +
         '<div class="skill-list">' + g.items.map(function (x) { return '<span class="chip">' + esc(x) + '</span>'; }).join('') + '</div></div>';
     }).join('');
+    var ha = document.querySelector('.hero-actions');
+    if (ha && C.cvUrl) ha.insertAdjacentHTML('beforeend', '<a class="btn btn-outline" href="' + esc(C.cvUrl) + '" download>' + icon('download', 18, 2) + 'Download my CV</a>');
     var pc = document.getElementById('project-count');
     if (pc) pc.setAttribute('data-count', published().length);
 

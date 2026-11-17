@@ -13,7 +13,7 @@ window.SITE_CONFIG = {
 
   // Put your CV in assets/cv/ and write its path here, e.g. 'assets/cv/Inoussa_Simpore_CV.pdf'.
   // Leave empty ('') to hide every "Download CV" button.
-  cvUrl: '',
+  cvUrl: 'assets/cv/Inoussa_Simpore_Business_Analyst_CV.pdf',
 
   /* ---------- CONTACT FORM ---------- */
   form: {
