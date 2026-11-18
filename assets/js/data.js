@@ -423,7 +423,7 @@ window.PROJECTS = [
     published: true,
     featured: false,
     category: 'bi',
-    context: 'Internship · Deal Squard',
+    context: 'Internship · Deal Squad',
     title: 'Hotel Booking',
     accent: 'Performance Dashboard',
     card: {
@@ -437,7 +437,7 @@ window.PROJECTS = [
     tagline: 'Business Intelligence · Internship',
     meta: [
       { k: 'My role', v: 'Intern – Business Analyst' },
-      { k: 'Company', v: 'Deal Squard · India' },
+      { k: 'Company', v: 'Deal Squad · India' },
       { k: 'Duration', v: 'Jul – Aug 2024 (2 months)' },
       { k: 'Tools', v: 'Power BI · DAX' }
     ],
@@ -492,7 +492,7 @@ window.PROJECTS = [
 
 window.EXPERIENCE = [
   {
-    title: 'Business Analyst', org: 'SRJ Real Estate', place: 'Dubai, UAE', dates: 'Nov 2025 – Present', icon: 'home',
+    title: 'Business Analyst', org: 'SRJ Real Estate', place: 'Dubai, UAE', dates: 'Nov 2025 – Aug 2026', icon: 'home',
     tags: ['Business Analysis', 'Data Analysis'],
     points: [
       'Analyzed real estate data from Property Finder, Dubai REST and DLD to identify investment opportunities and market trends.',
@@ -501,7 +501,7 @@ window.EXPERIENCE = [
     ]
   },
   {
-    title: 'Intern – Business Analyst', org: 'Deal Squard', place: 'India · On-site', dates: 'Jul 2024 – Aug 2024', icon: 'bars',
+    title: 'Intern – Business Analyst', org: 'Deal Squad', place: 'India · On-site', dates: 'Jul 2024 – Aug 2024', icon: 'bars',
     tags: ['Business Analysis', 'Power BI'],
     points: [
       'Analyzed hotel booking data to identify key business questions.',
