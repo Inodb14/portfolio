@@ -51,7 +51,7 @@
   /* ---------- header ---------- */
   var links = [
     ['index.html', 'Home', 'home'], ['about.html', 'About', 'about'], ['experience.html', 'Experience', 'experience'],
-    ['projects.html', 'Projects', 'projects'], ['contact.html', 'Contact', 'contact']
+    ['projects.html', 'Projects', 'projects'], ['services.html', 'Services', 'services'], ['contact.html', 'Contact', 'contact']
   ];
   var activeKey = page === 'case' ? 'projects' : page;
   var header = document.getElementById('site-header');
@@ -280,6 +280,20 @@
     var tg = document.getElementById('tools');
     if (tg) tg.innerHTML = window.TOOLS.map(function (t, i) {
       return '<div class="box tool reveal d' + (i % 3 + 1) + '"><i style="background:' + esc(t.color) + '">' + esc(t.abbr) + '</i><b style="color:var(--heading)">' + esc(t.name) + '</b></div>';
+    }).join('');
+  }
+
+  /* ---------- page: services ---------- */
+  if (page === 'services') {
+    var fl = document.getElementById('freelance');
+    if (fl) fl.innerHTML = (window.FREELANCE || []).map(function (f, i) {
+      return '<div class="card feature reveal d' + (i + 1) + '">' +
+        '<div class="ico">' + icon(f.icon, 26) + '</div>' +
+        '<h3 style="font-size:20px">' + esc(f.title) + '</h3>' +
+        '<div><small style="font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">For</small><p style="color:var(--text-2);font-size:15px;margin-top:4px">' + esc(f.who) + '</p></div>' +
+        '<div><small style="font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">What you get</small><ul class="check" style="margin-top:10px;font-size:15px">' + f.get.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>' +
+        '<a class="link-arrow" style="color:var(--teal)" href="' + esc(f.example) + '">' + esc(f.exampleLabel) + ' <span>→</span></a>' +
+        '<a class="btn btn-primary" style="margin-top:auto;align-self:flex-start" href="contact.html?subject=' + encodeURIComponent(f.subject) + '">Request a quote</a></div>';
     }).join('');
   }
 

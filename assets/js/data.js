@@ -552,3 +552,29 @@ window.TOOLS = [
   { name: 'Figma', abbr: 'F', color: '#c2410c' }, { name: 'Monday.com', abbr: 'M', color: '#be123c' },
   { name: 'Bitrix24', abbr: '24', color: '#0e7490' }, { name: 'Salesforce', abbr: 'SF', color: '#0369a1' }
 ];
+
+
+/* ---------- Freelance services (services.html) ---------- */
+window.FREELANCE = [
+  {
+    title: 'Power BI and Excel dashboards', icon: 'chart',
+    who: 'Small businesses, shops and real estate agencies that still follow their numbers by hand.',
+    get: ['Your Excel files or exports cleaned and combined (Power Query)', 'The KPIs that matter for your decisions', 'A clear dashboard your team can filter on its own', 'A short walkthrough so you know how to use it'],
+    example: 'project.html?id=outdoor-gear-sales-excel', exampleLabel: 'See the Outdoor Gear Sales example',
+    subject: 'Power BI / Excel project'
+  },
+  {
+    title: 'Dubai real estate market analysis', icon: 'home',
+    who: 'Investors and real estate agents, including French-speaking investors looking at Dubai.',
+    get: ['Prices, price per sqft and rental yield by area', 'A comparison of the areas that fit your budget', 'A clear recommendation: where to buy, and why', 'A short report in English or French'],
+    example: 'project.html?id=uae-residential-investment', exampleLabel: 'See the UAE Residential Investment example',
+    subject: 'Real estate market analysis'
+  },
+  {
+    title: 'Business requirements (BRD, FRD, user stories)', icon: 'doc',
+    who: 'Startups and web agencies launching an app or a platform.',
+    get: ['Your idea turned into clear business requirements', 'Priorities set with MoSCoW', 'Functional requirements and acceptance criteria for the developers', 'A document your team and developers can follow'],
+    example: 'project.html?id=event-ticketing-brd', exampleLabel: 'See the Event Ticketing BRD example',
+    subject: 'Business analysis project'
+  }
+];
